@@ -1,0 +1,194 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 50px; /* To make space for the fixed header */
+}
+  
+/* Header Styles */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 20px;  /* Reduced padding for a more compact header */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Space out logo and navigation */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+/* Logo Styles */
+header .Logo {
+    float: left; /* Float logo to the left */
+    display: flex;
+    align-items: center;
+}
+
+header .Logo img {
+    max-width: 50px;  /* Shrink logo size */
+    margin-right: 10px;  /* Add space between logo and heading */
+}
+
+header .Logo h1 {
+    font-size: 1.6rem; /* Reduce the font size */
+    margin: 0;
+}
+  
+/* Navigation Styles */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;  /* Align links to the right */
+}
+
+header nav ul li {
+    display: inline-block;  /* Inline block to maintain flexibility */
+    margin-right: 20px;
+}
+  
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+header nav ul li a:hover {
+    color: #f1c40f;
+}
+  
+/* Main Content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px; /* Offset for fixed header */
+    padding: 20px;
+}
+  
+.posts {
+    flex: 1;
+    margin-right: 20px;
+}
+  
+/* Post styles */
+.post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.post h2 a {
+    text-decoration: none;
+    color: #333;
+}
+  
+.post h2 a:hover {
+    color: #f1c40f;
+}
+  
+.post-meta {
+    font-size: 0.9rem;
+    color: #777;
+}
+  
+.excerpt {
+    margin-top: 15px;
+}
+  
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #f1c40f;
+    font-weight: bold;
+}
+  
+.read-more:hover {
+    text-decoration: underline;
+}
+  
+.sidebar {
+    flex-basis: 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+  
+.sidebar h4 {
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+  
+.sidebar ul {
+    list-style: none;
+}
+  
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+  
+.sidebar ul li a:hover {
+    color: #f1c40f;
+}
+  
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+  
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+  
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+
+    header .Logo {
+        float: none; /* Disable float on smaller screens */
+        text-align: center; /* Center the logo and heading */
+    }
+
+    header nav ul {
+        text-align: center; /* Center navigation items on mobile */
+    }
+}
