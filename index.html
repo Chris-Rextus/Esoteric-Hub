@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html lan="en">
     <head>
-        <title>The Esotechno Hub</title>
+        <title>The Esoteric Hub</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Content about Mathematics, Philosophy, Technology, Ocultism, Economics and overall based opinions">
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="icon" href="assets/img/logo.png" type="image/png">
     </head>
     <body>
-        <!-- Header Section -->
-         <header>
-            <div class="Logo">
-                <img src="assets/img/logo.png"  alt="logo">
-                <h1>The Esotechno Hub</h1>
+        <!-- Header Portion -->
+        <header>
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="logo">
+                <h1>The Esoteric Hub</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                  </ul>
+                    <li><a href="content.html">Content</a></li>
+                    <li><a href="latest.html">Latest</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
             </nav>
-         </header>
+            
+        </header>
 
-          <!-- Main Content Section -->
-    <main>
-        <section class="posts">
-        <article class="post">
-            <h2><a href="#">The Future of Web Design</a></h2>
-            <p class="post-meta">Posted on <time datetime="2024-12-17">December 17, 2024</time> by <a href="#">John Doe</a></p>
-            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor...</p>
-            <a href="#" class="read-more">Read More</a>
-        </article>
+        <main>
+            <!-- Container for the main content -->
+            <div class="introduction">
+                <h2>Esoteric knowledge and exoteric basedness</h2>
+                <p>Have you ever wondered if God exists? Which is the best way of handling the burden of life? Why are the US inflation-corrected salaries frozen since the 70s, or even why is government bureaucracy full of P________? Cause I did, and here lie the answers I got until this point for you to read.</p>
+            </div>
+
+            <div class="main-container">
+                
+                <!-- Latest Articles Section (Left) -->
+                <section class="latest-articles">
+                    <h2>Latest Articles</h2>
+
+                    <!-- Articles -->
+                    <div class="article">
+                        <h3>An Introduction to Math</h3>
+                        <p>Mathematics is certainly the most wronged field of knowledge nowadays, and understanding what it is and how it works will certainly enhance your intelectual skills in unimaginable ways. It can even take you out of that two digit IQ if your lucky enough.</p>
+                        <a href="categories/mathematics/introduction-to-math.html" class="read-more">Read More</a>
+                    </div>
+
+                    <div class="article">
+                        <h3>Magic is Real, I'm serious</h3>
+                        <p>The perspectives on magic are divided in basically two: The normie wicca that plays with rituals to attract her beloved Mr.Chad Chadigton McThunderCock, and the <a href="https://www.reddit.com/r/atheism/" target="_blank">/r/Atheism</a> midwit who thinks he's very cool by cursing churches all day. And even though those living-proofs of Dunning-Krueger effect obfuscate the discussion, the topic is actually very profound and frutiferous to explore.</p>
+                        <a href="categories/occultism/magic-is-real.html" class="read-more">Read More</a>
+                    </div>
+
+                </section>
         
-        <article class="post">
-            <h2><a href="#">CSS Grid vs Flexbox</a></h2>
-            <p class="post-meta">Posted on <time datetime="2024-12-12">December 12, 2024</time> by <a href="#">Jane Smith</a></p>
-            <p class="excerpt">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...</p>
-            <a href="#" class="read-more">Read More</a>
-        </article>
+                <!-- Context/Sidebar Section (Right) -->
+                <aside class="sidebar">
+                    <h2>About the Page</h2>
+                    <p>Here, and only here, lies the perfect Venn's intersection of Mathematics, Physics, overall STEM, Computer Science, Economics, Philosophy, Ocultism, Religion and even some humanities, cooked with proper touches of irony and dangerous overloaded doses of autism. Choose your gnosis, and enjoy without moderation.</p>
         
-        <!-- More posts can be added similarly -->
-        </section>
+                    <h3>Most Published Categories</h3>
+                    <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Mathematics</a></li>
+                        <li><a href="#">Philosophy</a></li>
+                        <li><a href="#">Economics</a></li>
+                    </ul>
+                </aside>
+                
+            </div>
+        </main>
+        
 
-        <!-- Sidebar Section -->
-        <aside class="sidebar">
-        <h3>About Me</h3>
-        <p>I'm a passionate web designer and developer. I write about design trends, coding, and more.</p>
-        <h4>Categories</h4>
-        <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Development</a></li>
-            <li><a href="#">Lifestyle</a></li>
-        </ul>
-        </aside>
-    </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 My Blog | <a href="#">Privacy Policy</a></p>
-    </footer>
+        <!-- Footer Portion -->
+        <footer>
 
-    </body>
-
+        </footer>
     </body>
 </html>
